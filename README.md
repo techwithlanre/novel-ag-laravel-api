@@ -1,3 +1,56 @@
+- firstName *
+- lastName *
+- userName *
+- phone *
+- Email
+- profilePicture
+- contactAddress
+- State
+- localGovernment
+- password *
+- confirmPassword *
+- verifiedPhone @default false
+
+
+Farm [ ]
+
+address [ ],
+
+Endpoints.
+
+Register - register user with
+
+Login - login user and generate auth token
+
+auth - jwt token for all protected routes
+
+forgotPassword * - OTP to registered user phone number
+
+verifyPhone * - OTP to the
+
+resetPassword * - update password
+
+getUser * - get details of a single user
+
+getUsers * - get details of all the users
+
+updateUser * - loggedin should be able to update
+
+deleteUser * - able to delete user, only accessible to super admin
+
+KYC - take care biometrics, facecapture, ID card,
+
+
+Pages
+
+Homepage
+
+User dashboard
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
