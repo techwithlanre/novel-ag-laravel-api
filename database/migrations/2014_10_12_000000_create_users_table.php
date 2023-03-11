@@ -23,8 +23,8 @@ return new class extends Migration
             $table->foreignId('state_id')->nullable();
             $table->foreignId('local_government_id')->nullable();
             $table->foreignId('ward_id')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->timestamp('phone_verified_at')->nullable();
+            $table->dateTime('email_verified_at')->nullable();
+            $table->dateTime('phone_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -20,8 +20,7 @@ return new class() extends Migration {
                 ->default('transfer')
             ;
 
-            $table
-                ->enum('status_last', ['exchange', 'transfer', 'paid', 'refund', 'gift'])
+            $table->enum('status_last', ['exchange', 'transfer', 'paid', 'refund', 'gift'])
                 ->nullable()
             ;
 

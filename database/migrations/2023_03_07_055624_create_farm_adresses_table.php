@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('farm_adresses', function (Blueprint $table) {
+        Schema::create('farm_addresses', function (Blueprint $table) {
             $table->id();
             $table->string('latitude');
             $table->string('longitude');
             $table->foreignId('state_id');
-            $table->foreignId('local_goverment_id');
+            $table->foreignId('local_government_id');
             $table->foreignId('ward_id');
             $table->string('address')->nullable();
             $table->string('landmark')->nullable();
